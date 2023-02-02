@@ -1,16 +1,22 @@
 class Demo{
     public static void main(String[] args) {
-        int n1=1;
-        int n2=2;
-        int n3;
-        int count=20;
-
-        for(int i=1;i<=count;i++){
-            n3=n1+n2;
-            System.out.print(n3+" ");
-            n1=n2;
-            n2=n3;
+     int i,m=0,flag=0;
+     int n=3;
+      m=n/2;
+     if(n==0||n==1){
+        System.out.println(n+" is not a prime no");
+     }else{
+        for(i=2;i<=m;i++){
+            if(n%i==0){
+                System.out.println(n+" is not a prime no");
+                flag=1;
+                break;
+            }
         }
+        if(flag==0){
+            System.out.println(n+" is a prime no");
+        }
+     }
     }
 }
 
